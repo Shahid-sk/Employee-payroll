@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class EmployeePayrollImpl {
 	public enum IOService {
 		CONSOLE_IO, FILE_IO, REST_IO
