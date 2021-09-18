@@ -11,11 +11,11 @@ public class Java8WatchService {
 	private final WatchService watcher;
 	private final Map<WatchKey, Path> dirWatchers;
 
-	public Java8WatchServiceExample(Path dir) throws IOException {
-        this.watcher = FileSystems.getDefault().newWatchService();
-        this.dirWatchers = new HashMap<>();
-        scanAndRegisterDirectories(dir);
-    }
+	public Java8WatchService(Path dir) throws IOException {
+		this.watcher = FileSystems.getDefault().newWatchService();
+		this.dirWatchers = new HashMap<>();
+		scanAndRegisterDirectories(dir);
+	}
 
 	// Register the given directory with the WatchService
 	private void registerDirWatchers(Path dir) throws IOException {
